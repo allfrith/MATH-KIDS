@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+.box2{
+	font-family: 'Staatliches', cursive;
+	position: relative;
+	padding: 10px 0;
+	padding-bottom: 0;
+   margin:auto;
+
+	width: 50%;
+	border-bottom:20px solid #59CD90; 
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	overflow: hidden;
+}
+
+.box2 h2{
+	letter-spacing: 5px;
+	text-align: center;
+	color: #fff;
+	background: #59CD90;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 700;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.box2 ul{
+	position: relative;
+	background: #fff;
+
+}
+
+.box2 ul li{
+	list-style: none;
+	padding: 14px ;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transition: transform 0.5s;
+
+}
+.box2 ul:hover li{
+	opacity: 0.2;
+	}
+
+.box2 ul li:hover{
+	transform: scale(1.03);
+	z-index: 100;
+	background: #59CD90;
+	box-shadow: 0 5px 25px rgba(0,0,0,.2);
+	color:#fff;
+	opacity: 1;
+}
+
+.box2 ul li span{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: #59CD90;
+	color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	transform: translateY(-2px);
+}
+
+.box2 ul li:hover span{
+	background: #fff;
+	color:#59CD90;
+}
+
+.box2 a {
+	text-decoration: none;
+	color: black;
+}
+@media screen and (max-width: 700px){
+    .box2{
+        
+    width:90%;
+
+    }

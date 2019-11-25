@@ -1,0 +1,211 @@
+
+.box{
+	position: relative;
+	padding: 50px 0px;
+	padding-bottom: 0;
+   	margin:50px auto 100px auto;
+	width: 60%;
+	border-bottom:20px solid #EC7063;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.box h2{
+	color: #fff;
+	text-align: center;
+	background: #EC7063 ;
+	padding: 10px 20px;
+	font-size: 30px;
+	font-weight: 700;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.box ul{
+	position: relative;
+	background: #fff;
+
+}
+
+.box ul li{
+	list-style: none;
+	padding: 30px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transition: transform 0.5s;
+}
+.box ul:hover li{
+	opacity: 0.2;
+	}
+
+.box ul li:hover{
+	transform: scale(1.1);
+	z-index: 100;
+	background: #EC7063 ;
+	box-shadow: 0 5px 25px rgba(0,0,0,.2);
+	color:#fff;
+	opacity: 1;
+}
+
+.box ul li span{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: #EC7063 ;
+	color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	transform: translateY(-2px);
+}
+
+.box ul li:hover span{
+	background: #fff;
+	color:#59CD90;
+}
+
+.box a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px ;
+}
+ 
+.title{
+	color: #000;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+   
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+   
+    font-weight: 100;
+   
+}
+
+.servicios{
+   
+  font-family: 'Staatliches', cursive;
+    border-radius: 10px;
+    height: 100%;
+   
+    background-color: rgba(244, 62, 48,.5);
+    max-width: 80%;
+   
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container3{
+    border-radius: 10px;
+    height: 100%;
+
+    width: 100%;
+    max-width: 1200px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+     margin-bottom: 50px;
+}
+
+.container3 .card{
+  
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container3 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container3 .card img{
+    padding-top:5px; 
+    width: 200px;
+    height: 200px;
+}
+
+
+.container3 .card h4{
+    font-weight: 600;
+}
+
+.container3 .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container3 .card a {
+    margin: auto;
+    font-size: 30px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+@media (width: 700px){
+    .servicios{
+        
+    width:80%;
+
+    }
+
+    .container3 .card{
+        width: 100px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

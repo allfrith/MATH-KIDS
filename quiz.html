@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eritrocitos</title>
+    <link rel="stylesheet" type="text/css" href="css/barra-navegacion.css">
+    <link rel="stylesheet" href="css/quiz.css" />
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/shape.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	
+	<header>
+		<div class="logo">
+          <img src="logo.jpg" alt="">
+          <h1 class="name">FCQ</h1>
+    </div>
+		<div class="menu-toogle"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+				 <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+				
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+          <h1>Quiz sobre Alteraciones en Eritrocitos</h1>
+          <a class="btn" href="game.html">Play</a>
+          <a class="btn" href="highscores.html">High Scores</a>
+        </div>
+      </div>
+	
+	<footer>
+       
+       <div class="container-footer-all">        
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Facultad de Ciencias Química-BUAP</h1>
+
+                    <p>Esta facultad posee una consolidada trayectoria, con lo que refrenda la vocación académica y la calidad de sus programas educativos. Siempre buscando promover la formación de una comunidad del conocimiento</p>
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                   <a href="https://es-la.facebook.com/FCQBUAP/" class="row1">
+                   		<img src="icon/facebook.png">
+                        <label>Facebook</label>
+                   </a>
+
+                   <a href="https://www.buap.mx/content/facultad-de-ciencias-qu%C3%ADmicas" class="row1">
+                   		<img src="icon/chrome.png">
+                        <label>Web Oficial</label>
+                   </a>
+
+                   <a href="https://www.instagram.com/buapoficial/?hl=es-la" class="row1">
+                   		<img src="icon/instagram.png">
+                        <label >Instagram</label>
+                   </a>
+                              
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>Avenida San Manuel, Senda Quimica, Cdad. Universitaria, 72570 Puebla, Pue.</label>
+                    </div>
+
+                    
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                         <label>Cristiancedano1030@gmail.com</label>
+                    </div>
+                </div>
+            </div>        
+        </div>    
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toogle').click(function(){
+				$('.menu-toogle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+
+	 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="particles.js"></script>
+    <script src="particulas.js"></script>
+</body>
+</html>

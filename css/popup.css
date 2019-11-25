@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+
+
+.btn-open-popup{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D90C43;
+    display: block;
+    background: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+
+.container-all{
+  
+    width: 75%;
+    height: 40%;
+    position: absolute;
+    padding: 50px auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    
+   
+}
+
+
+.container-all:target{
+
+    border-radius: .3%;
+    background: rgba(0,0,0,0.8);
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+
+.container-all .img{
+    width: 60%;
+    margin: auto 5px;
+   
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-text{
+    width: 70%;
+    padding: 20px;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+
+.container-text h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+.container-all img{
+    width: 80%;
+        height:80%;
+}
+
+.btn-close-popup{
+    width: 2%;
+    height: 2%;
+    position: relative;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+    text-decoration:none;
+}
+
+@media screen and (max-width: 900px){
+    .btn-close-popup{
+    position: absolute;
+    width: 13px;
+    height: 15px;
+}
+    .container-all{
+        margin: auto;
+        width: 90%;
+        height: 40%;
+        border-color: #000;
+    }
+    .popup{
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+    
+   .container-all .img{
+    align-items: center;
+        width: 95%;
+        height: 60%;
+        margin: auto;
+    }
+    
+    .container-text{
+        width: 84%;
+
+        height: 60%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .container-text{
+        padding: 20px;
+    }
+    
+    .container-text h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .container-text p{
+        text-align: justify;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

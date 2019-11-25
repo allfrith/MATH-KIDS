@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eritrocitos</title>
+	<link rel="stylesheet" type="text/css" href="css/barra-navegacion.css">
+	<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shape.css">
+    <link href="./css/bootstrap1.min.css" rel="stylesheet">
+    <link href="./css/memorama.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	
+	<header>
+	<div class="logo">
+          <img src="logo.jpg" alt="">
+          <h1 class="name">FCQ</h1>
+      </div>
+		<div class="menu-toogle"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+				 <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="juegos.html">Juego</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+				
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+
+	<div class="memorama">
+        <main role="main" class="container-fluid" id="app">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Juego de memorama</h1>
+                    <p align="center">
+                        <span class="h5">Intentos: </span>
+                        {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
+                        </span> {{aciertos}}
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div v-for="(fila, indiceFila) in memorama" :key="indiceFila"
+                class="row" align="center">
+                <div :key="indiceFila+''+indiceImagen" class="col-3"
+                    v-for="(imagen, indiceImagen) in fila">
+                    <div class="mb-3">
+                        <img @click="voltear(indiceFila, indiceImagen)"
+                            :class="{'girar': imagen.mostrar}"
+                            :src="(imagen.mostrar ? imagen.ruta :
+                            NOMBRE_IMAGEN_OCULTA)" class="card-img-top img-fluid
+                            img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </main>
+        </div>
+	
+	<footer>
+       
+       <div class="container-footer-all">        
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Facultad de Ciencias Química-BUAP</h1>
+
+                    <p>Esta facultad posee una consolidada trayectoria, con lo que refrenda la vocación académica y la calidad de sus programas educativos. Siempre buscando promover la formación de una comunidad del conocimiento</p>
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                   <a href="https://es-la.facebook.com/FCQBUAP/" class="row1">
+                   		<img src="icon/facebook.png">
+                        <label>Siguenos en Facebook</label>
+                   </a>
+
+                   <a href="https://www.buap.mx/content/facultad-de-ciencias-qu%C3%ADmicas" class="row1">
+                   		<img src="icon/chrome.png">
+                        <label>Siguenos en nuestra pagina oficial</label>
+                   </a>
+
+                   <a href="enlacepagina.html" class="row1">
+                   		<img src="icon/instagram.png">
+                        <label >Siguenos en Facebook</label>
+                   </a>
+                              
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>La Romana, 
+                        Republica Dominicana
+                        Manuel del Cabral
+                        Casa # 27</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/smartphone.png">
+                        <label>+1-829-395-2064</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                         <label>Cristiancedano1030@gmail.com</label>
+                    </div>
+                </div>
+            </div>        
+        </div>    
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toogle').click(function(){
+				$('.menu-toogle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+
+<script src="./js/sweetalert2.all.min.js"></script>
+<script src="./js/vue.min.js"></script>
+<script src="./js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="particles.js"></script>
+    <script src="particulas.js"></script>
+</body>
+</html>
